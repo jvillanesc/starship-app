@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "5b274f32-7cab-4f86-9bb1-7c790f3852c7",
+		"name": "Starship",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9983530"
+	},
+	"item": [
+		{
+			"name": "Create Starships",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base-url}}/api/starships",
+					"host": [
+						"{{base-url}}"
+					],
+					"path": [
+						"api",
+						"starships"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Starship",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base-url}}/api/starships/10",
+					"host": [
+						"{{base-url}}"
+					],
+					"path": [
+						"api",
+						"starships",
+						"10"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base-url",
+			"value": "http://localhost:8081",
+			"type": "string"
+		}
+	]
+}

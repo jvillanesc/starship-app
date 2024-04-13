@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS startship
+(startship_id INT NOT NULL AUTO_INCREMENT,
+name VARCHAR(50) NOT NULL,
+model VARCHAR(50) NOT NULL,
+manufacturer VARCHAR(100) NOT NULL,
+publish_date TIMESTAMP NOT NULL,
+PRIMARY KEY (startship_id));
